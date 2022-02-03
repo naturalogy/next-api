@@ -1,0 +1,17 @@
+// Output Bootstrap Icon as pseudo element
+
+@mixin bi($vb, $w, $h, $path, $fill) {
+  content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="#{$vb}" width="#{$w}" height="#{$h}"%3E%3Cpath d="#{$path}" fill="#{$fill}"/%3E%3C/svg%3E');
+  display: inline-block;
+}
+
+// Usage
+// element::after {
+//   @include bi(
+//     '0 0 16 16',
+//     '24',
+//     '24',
+//     'M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z',
+//     '#{$gray-500}'
+//   );
+// }

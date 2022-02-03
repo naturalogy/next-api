@@ -1,0 +1,42 @@
+/*
+ * Layout
+ */
+
+ [class^='stack'] {
+  & > * {
+    margin-bottom: 0;
+    margin-top: 0;
+    & + * {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.stack {
+  &-lg > *:not(.no-stack) + * {
+    margin-top: map-get($spacers, 'lg');
+  }
+  &-xl > *:not(.no-stack) + * {
+    margin-top: map-get($spacers, 'xl');
+  }
+  &-mobile-lg > *:not(.no-stack) + * {
+    @include media-breakpoint-down(md) {
+      margin-top: map-get($spacers, 'lg');
+    }
+  }
+  &-mobile-xl > *:not(.no-stack) + * {
+    @include media-breakpoint-down(md) {
+      margin-top: map-get($spacers, 'xl');
+    }
+  }
+}
+
+/*
+ * Main
+ */
+
+.page-heading,
+.sidebar-heading,
+.section-heading {
+  font-feature-settings: 'palt';
+}

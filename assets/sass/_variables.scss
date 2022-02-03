@@ -1,0 +1,166 @@
+// Colors
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: hsl(220, 10%, 8%);
+$grays: (
+  '100': $gray-100,
+  '200': $gray-200,
+  '300': $gray-300,
+  '400': $gray-400,
+  '500': $gray-500,
+  '600': $gray-600,
+  '700': $gray-700,
+  '800': $gray-800,
+  '900': $gray-900,
+);
+$blue: #2356ab;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$colors: (
+  'blue': $blue,
+  'indigo': $indigo,
+  'purple': $purple,
+  'pink': $pink,
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'teal': $teal,
+  'cyan': $cyan,
+  'white': $white,
+  'gray': $gray-600,
+  'gray-dark': $gray-800,
+);
+$primary: $blue;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+);
+
+// Spacer
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  xs: $spacer * 0.25,
+  sm: $spacer * 0.5,
+  md: $spacer,
+  lg: $spacer * 1.5,
+  xl: $spacer * 3,
+);
+$enable-negative-margins: true;
+
+// Sizing
+$utilities: (
+  'width': (
+    property: width,
+    class: w,
+    values: (
+      20rem: 20rem,
+    ),
+  ),
+);
+
+// Global
+$min-contrast-ratio: 3;
+$body-color: $gray-800;
+$enable-rounded: false;
+$enable-shadows: true;
+$box-shadow: 0 0.25rem 0.5rem rgba($black, 0.2);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.15);
+$link-color: $blue;
+$link-decoration: none;
+$link-hover-decoration: none;
+$box-shadow-base: 0 0 2px 0 rgba($black, 0.2);
+$paragraph-margin-bottom: 1.5rem;
+
+// Typography
+$font-size-base: 1rem;
+$font-family-sans-serif: 'Noto Sans JP', sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$line-height-base: 1.75;
+$line-height-sm: 1.5;
+$line-height-xs: 1.25;
+$line-height-none: 1.1;
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+$font-size-xl: 1.5rem;
+$font-size-lg: 1.25rem;
+$font-size-sm: 0.875rem;
+$font-size-xs: 0.75rem;
+$lead-font-weight: $font-weight-normal;
+$font-sizes: (
+  xl: $font-size-xl,
+  lg: $font-size-lg,
+  base: $font-size-base,
+  sm: $font-size-sm,
+  xs: $font-size-xs,
+);
+
+// Heading
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: $line-height-xs;
+$headings-margin-bottom: 1.5rem;
+$headings-color: $gray-700;
+
+// Navbar
+$navbar-brand-font-size: $font-size-base;
+
+// Breadcrumb
+$breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12"%3E%3Cpath d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" fill="#{$gray-600}"/%3E%3C/svg%3E');
+$breadcrumb-font-size: $font-size-sm;
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-padding-y: 1.5rem;
+
+// Form & Buttons
+$form-label-margin-bottom: 0.25rem;
+$input-height: 2.5rem;
+$input-line-height: $line-height-xs;
+$btn-font-size-lg: $font-size-base;
+$btn-line-height: $line-height-none;
+$btn-disabled-opacity: 0.5;
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 1.5rem;
+$btn-padding-y-sm: 0.5rem;
+$btn-padding-x-sm: 1rem;
+$btn-padding-y-lg: 1rem;
+$btn-padding-x-lg: 2rem;
+$btn-font-size-sm: $font-size-sm;
