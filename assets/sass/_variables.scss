@@ -129,7 +129,7 @@ $lead-font-weight: $font-weight-normal;
 $font-sizes: (
   xl: $font-size-xl,
   lg: $font-size-lg,
-  base: $font-size-base,
+  md: $font-size-base,
   sm: $font-size-sm,
   xs: $font-size-xs,
 );
@@ -141,14 +141,23 @@ $headings-line-height: $line-height-xs;
 $headings-margin-bottom: 1.5rem;
 $headings-color: $gray-700;
 
-// Navbar
+// Badge
+$badge-font-weight: $font-weight-normal;
+
+// Modal
+$modal-header-border-width: 0;
+$modal-footer-border-width: 0;
+
+// Nav & Navbar
 $navbar-brand-font-size: $font-size-base;
+$navbar-brand-padding-y: 0;
+$navbar-nav-link-padding-x: 1rem;
 
 // Breadcrumb
 $breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12"%3E%3Cpath d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" fill="#{$gray-600}"/%3E%3C/svg%3E');
 $breadcrumb-font-size: $font-size-sm;
 $breadcrumb-margin-bottom: 0;
-$breadcrumb-padding-y: 1.5rem;
+$breadcrumb-padding-y: 0;
 
 // Form & Buttons
 $form-label-margin-bottom: 0.25rem;
@@ -158,7 +167,7 @@ $btn-font-size-lg: $font-size-base;
 $btn-line-height: $line-height-none;
 $btn-disabled-opacity: 0.5;
 $btn-padding-y: 0.75rem;
-$btn-padding-x: 1.5rem;
+$btn-padding-x: 1rem;
 $btn-padding-y-sm: 0.5rem;
 $btn-padding-x-sm: 1rem;
 $btn-padding-y-lg: 1rem;
